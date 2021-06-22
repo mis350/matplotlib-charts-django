@@ -2,7 +2,7 @@
 
 Look at the example in myapp and copy plots.py to your app.
 
-You need to create rapper functions in plots.py that produce different types of plots. You prepare the data in your views and pass them to the plot function in plots.py to produce a plot that can be embedded in a Django tempalte
+You need to create wrapper functions in plots.py that produce different types of plots. You prepare the data in your views and pass them to the plot function in plots.py to produce a plot that can be embedded in a Django template
 
 ## Resources 
 
