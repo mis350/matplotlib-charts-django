@@ -1,44 +1,13 @@
-# Developing Django on Repl.it
+# Embedding Matplotlib Charts in Django
 
-- Fork this template to get started
-- Simply hit run to start the server
-- The server will autoreload as needed. You don't need to restart the server manually.
+Look at the example in myapp and copy plots.py to your app.
 
-## Add your first view
+You need to create rapper functions in plots.py that produce different types of plots. You prepare the data in your views and pass them to the plot function in plots.py to produce a plot that can be embedded in a Django tempalte
 
-1. Create a file under `mysite` named `views.py` with the following contents:
+## Resources 
 
-```
-from django.http import HttpResponse
+- You can see sample matplotlib plots [here](https://matplotlib.org/stable/tutorials/introductory/sample_plots.html)
 
+- Matplotlib documentation can be found [here](https://matplotlib.org/stable/contents.html)
 
-def index(request):
-    return HttpResponse("Hello, world.")
-```
-
-2. Add a url pattern under `mysite/urls.py`. It should look like this:
-
-```
-from django.contrib import admin
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-]
-```
-
-## Shell
-
-Django utilizes the shell for managing your site. For this click on the `?` in the lower-right corner and click "Workspace shortcuts" from there you can open a new shell pane. 
-
-## Database
-
-By default this template utilizes the sqlite database engine. While this is fine for development it won't work with external users of your app as we don't persist changes to files when they happen outside the development environment. 
-
-We suggest bringing a database using an outside service. 
-
-See Django documentation on how to setup a database: https://docs.djangoproject.com/en/3.0/intro/tutorial02/
-
-based on  amasad/django-template
+- Matplotlib tutorial showing how different graphs could be created is found [here](https://www.tutorialspoint.com/matplotlib/index.htm)
