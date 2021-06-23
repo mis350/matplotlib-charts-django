@@ -18,7 +18,7 @@ def get_graph():
 
 # create a plot function for different matplotlib plots
 def line_plot(x, y):
-  plt.figure(figsize=(10,5)) # you can set size
+  plt.figure(figsize=(3,3)) # you can set size
   plt.plot(x,y)
   return get_graph()
 
@@ -31,3 +31,4 @@ def bar_plot(x, h):
   plt.figure(figsize=(4,4))
   plt.bar(x,h)
   return get_graph()
+
